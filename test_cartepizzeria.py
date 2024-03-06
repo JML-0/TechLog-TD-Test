@@ -10,6 +10,10 @@ class TestCartePizzeria(unittest.TestCase):
         cp.pizzas = [pizza]
         assert not cp.is_empty()
 
+    def test_is_empty(self):
+        cp = CartePizzeria()
+        assert cp.is_empty()
+
     def test_nb_pizzas(self):
         pizza = Mock()
         cp = CartePizzeria()
