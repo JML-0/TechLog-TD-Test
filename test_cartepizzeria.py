@@ -25,8 +25,8 @@ class TestCartePizzeria(unittest.TestCase):
 
     def test_remove_pizza(self):
         pizza = Mock()
-        pizza.name = "calzone"
         pizza2 = Mock()
+        pizza.name = "calzone"
         pizza2.name = "canibale"
         cp = CartePizzeria()
         cp.pizzas = [pizza]
